@@ -1,0 +1,200 @@
+{
+    "metrics": {
+        "intent_accuracy": 0.7,
+        "escalation_accuracy": 0.2,
+        "escalation_f1": 0.3333333333333333,
+        "avg_helpfulness": 5.0,
+        "avg_tone": 5.0,
+        "avg_quality": 5.0
+    },
+    "detailed_results": [
+        {
+            "customer_message": "@241073 @AppleSupport I have that problem too. Please help",
+            "true_intent": "other",
+            "prediction": {
+                "intent": "other",
+                "should_escalate": true,
+                "escalate_reason": "The customer is reporting an unspecified issue and requires a human agent to identify the specific problem and provide appropriate troubleshooting steps.",
+                "draft_response": null
+            },
+            "judge_scores": null
+        },
+        {
+            "customer_message": "@applesupport. hi. word on the street is i can inquire about my phone's battery life here. seems to be dying ...",
+            "true_intent": "battery_issue",
+            "prediction": {
+                "intent": "battery_issue",
+                "should_escalate": false,
+                "escalate_reason": "N/A",
+                "draft_response": [
+                    {
+                        "type": "text",
+                        "text": "@applesupport We can help. Please follow the steps in this guide to check your battery health: https://t.co/bivpdfBNJ6. If issues persist, please send us a DM with your iPhone model and the version of iOS you are currently using. https://t.co/GDrqU22YpT",
+                        "extras": {
+                            "signature": "EnEKbwERTTIPiMvSR07xs4tS8eMT1/Z90sSl0Q9P8wJ4JvTzxDigLHff3FZR9BxY7u2drsxjJy4ZL2WwPAMWGJZb6p7z8Lc8yp6t9xzaaugUja4W5j4eyvkMiLPhhkjqQ7XEdZLWdsGq7CqMrBgGdmWE7A=="
+                        }
+                    }
+                ]
+            },
+            "judge_scores": {
+                "helpfulness_score": 5,
+                "tone_score": 5,
+                "overall_quality": 5,
+                "reasoning": "The AI response is excellent. It provides the exact same helpful resources as the ground truth, maintains a professional and helpful tone, and clearly instructs the user on the next steps if the issue persists."
+            }
+        },
+        {
+            "customer_message": "@AppleSupport i can't reset my password for my apple id please help",
+            "true_intent": "login_appleid_issue",
+            "prediction": {
+                "intent": "login_appleid_issue",
+                "should_escalate": true,
+                "escalate_reason": "Password reset issues often require identity verification or troubleshooting account recovery steps that are sensitive and best handled by a human agent.",
+                "draft_response": null
+            },
+            "judge_scores": null
+        },
+        {
+            "customer_message": "@AppleSupport why when i turn my WiFi off does it suddenly come back on?? Fix this.",
+            "true_intent": "other",
+            "prediction": {
+                "intent": "software_behavior_issue",
+                "should_escalate": false,
+                "escalate_reason": "N/A",
+                "draft_response": [
+                    {
+                        "type": "text",
+                        "text": "@279599 We'd love to help. Which device are you experiencing this issue on, and which version of software is currently installed? \n\nIn the meantime, please check out this article for more information on how Wi-Fi and Bluetooth work in Control Center: https://t.co/osZOKKTalm. If you need to update your software, be sure to create a backup first: https://t.co/GDrqU22YpT. DM us if you have additional questions!",
+                        "extras": {
+                            "signature": "EnEKbwERTTIPV9EDdarNZzkGnFw5M97zuBUfVWwR2vUG51FKMmC8cYUDPhH89be7q7iE1jmXjH24WHx4qzOyNw1Q7aG02cEDcbWswXoLhb+zo1QbWXCb1GlEWo0AbyZGkl37tiblwcbP3EPjJQVEFUN9Qg=="
+                        }
+                    }
+                ]
+            },
+            "judge_scores": {
+                "helpfulness_score": 5,
+                "tone_score": 5,
+                "overall_quality": 5,
+                "reasoning": "The AI response is excellent. It addresses the customer's issue by asking for necessary diagnostic information (device and software version) while proactively providing relevant support articles that explain the expected behavior of Wi-Fi in Control Center, which is a common point of confusion for users. The tone is professional, helpful, and efficient."
+            }
+        },
+        {
+            "customer_message": "@AppleSupport No. She doesn\u2019t have a twitter account and she\u2019s in her mid-80s. Easier via me. What\u2019s the issue do you think?",
+            "true_intent": "other",
+            "prediction": {
+                "intent": "other",
+                "should_escalate": true,
+                "escalate_reason": "The customer is acting on behalf of a third party (an elderly relative) and is requesting a diagnostic opinion on an unspecified issue, which requires a human agent to gather context and provide secure support.",
+                "draft_response": null
+            },
+            "judge_scores": null
+        },
+        {
+            "customer_message": "@AppleSupport Yep,  it was there. I fix it by restoring from a backup and running update again.",
+            "true_intent": "update_issue",
+            "prediction": {
+                "intent": "update_issue",
+                "should_escalate": false,
+                "escalate_reason": "N/A",
+                "draft_response": [
+                    {
+                        "type": "text",
+                        "text": "@440258 Thank you for the update. We're glad to hear it's working properly now. Contact us again if you need further assistance.",
+                        "extras": {
+                            "signature": "EnEKbwERTTIPKvQVDNdtMdFtI+FMC2V+krAJQNqpbt2A2aO2iW54DMpI8nqi6VtTk8eKpJ+JLQHaBbaH/OFKnthKrT/NfXgGldbN1AK1hQLSDOHkE46vkbL7+O90mHLojM73ucPUL+RHSMy1jUY09vkZMA=="
+                        }
+                    }
+                ]
+            },
+            "judge_scores": {
+                "helpfulness_score": 5,
+                "tone_score": 5,
+                "overall_quality": 5,
+                "reasoning": "The AI response is identical to the ground truth human response. It is professional, acknowledges the customer's resolution, and provides a clear path for future support."
+            }
+        },
+        {
+            "customer_message": "Is anyone have a problem updating to #iOS 11.0.3 \ud83e\udd14 @349334 @AppleSupport https://t.co/JgJwCx8mQp",
+            "true_intent": "update_issue",
+            "prediction": {
+                "intent": "update_issue",
+                "should_escalate": false,
+                "escalate_reason": "N/A",
+                "draft_response": [
+                    {
+                        "type": "text",
+                        "text": "@349334 We\u2019d like to help. This article on over-the-air updates may help you with the process: https://t.co/Ui1yTnOCUz. If you're still running into trouble, let us know what you're seeing!",
+                        "extras": {
+                            "signature": "EnEKbwERTTIPFNJVLZbFLBZPIgivrIOBuQ5W3PFrl/1y+Emcl3vElxy+uNY7zNBatDjb2kwuBq5mm0Squ1Zdh80KIGdTSTAA4UcRcJ9RIEoiXW/eSG9M2+wP5dMuj+rLY1yxcsfdqamjB1iBCLmZMzoAeg=="
+                        }
+                    }
+                ]
+            },
+            "judge_scores": {
+                "helpfulness_score": 5,
+                "tone_score": 5,
+                "overall_quality": 5,
+                "reasoning": "The AI response is excellent. It provides the same helpful resource as the ground truth but adds a proactive offer to assist further if the issue persists, which is standard best practice for customer support."
+            }
+        },
+        {
+            "customer_message": "@AppleSupport fix the auto correct bugs and the I\ufe0f bug. You know what I\u2019m talking about!",
+            "true_intent": "update_issue",
+            "prediction": {
+                "intent": "software_bug",
+                "should_escalate": false,
+                "escalate_reason": "N/A",
+                "draft_response": [
+                    {
+                        "type": "text",
+                        "text": "@AppleSupport We understand your frustration and are here to help. Here\u2019s what you can do to work around the issue until it\u2019s addressed in a future software update: https://t.co/xXaXeeSRt9",
+                        "extras": {
+                            "signature": "EnEKbwERTTIPjCU82ickQlz+OBby4dYmkh8B9FK8NlcAuFZH3G0w/8Nab13jQazgKxUGsFy8kGkL1PzkPlxsokuluw+UuKQ3G2r4vSD1bNsE9O8XoVZrx6lhIJ+1r9MZcYxaJZZRXbOiBCaSSEpPk0Fn9g=="
+                        }
+                    }
+                ]
+            },
+            "judge_scores": {
+                "helpfulness_score": 5,
+                "tone_score": 5,
+                "overall_quality": 5,
+                "reasoning": "The AI response is excellent. It acknowledges the customer's frustration, maintains a professional and helpful tone, and provides the exact same actionable link as the ground truth response to resolve the user's issue."
+            }
+        },
+        {
+            "customer_message": "@115858 this iOS 11 update has trashed my brand new iphone. This is ridiculous.",
+            "true_intent": "update_issue",
+            "prediction": {
+                "intent": "update_issue",
+                "should_escalate": true,
+                "escalate_reason": "Customer is reporting a critical failure ('trashed') following an iOS update on a new device, which requires technical investigation and potential hardware/software support.",
+                "draft_response": null
+            },
+            "judge_scores": null
+        },
+        {
+            "customer_message": "lm using lowercase L\u2019s as l\u2019s until @AppleSupport fixes this question mark shit\ud83d\ude11",
+            "true_intent": "update_issue",
+            "prediction": {
+                "intent": "other",
+                "should_escalate": false,
+                "escalate_reason": "N/A",
+                "draft_response": [
+                    {
+                        "type": "text",
+                        "text": "Hi there. We understand how frustrating that autocorrect issue can be. \n\niOS 11.1.1 was recently released and includes a fix for this. Please be sure to back up your device prior to updating, and let us know if the issue persists afterward. You can find steps on how to back up your device here: https://t.co/4f8hwT5to6",
+                        "extras": {
+                            "signature": "EnEKbwERTTIPkVLsYFEBoS6IzpbrgJsyZNHIOX9sz63a5TT5UtDhjtkOFIJF9tI/h9fJJ4QVdHXmfzaGNNJQloDzhyX4Mh2LMqL7Y3eIWaerjpqsULBAVuARs/MupPdrkHkTgtFcCIHV+j3JHy8bRJfv9A=="
+                        }
+                    }
+                ]
+            },
+            "judge_scores": {
+                "helpfulness_score": 5,
+                "tone_score": 5,
+                "overall_quality": 5,
+                "reasoning": "The AI response is excellent. It acknowledges the customer's frustration, provides the correct technical solution (the iOS update), includes the necessary safety precaution (backing up), and provides the relevant support link. It is professional, empathetic, and concise."
+            }
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+langchain
+langchain-community
+sentence-transformers
+langchain-google-genai
+pandas
+scikit-learn
+python-dotenv
+kaggle
+pydantic
+chromadb
+tqdm
